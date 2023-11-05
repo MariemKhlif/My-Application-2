@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/film"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/arizonia"
+        android:gravity="center"
+        android:padding="30dp"
+        android:text="@string/title"
+        android:textColor="@color/black"
+        android:textSize="45sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/textAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/arizonia"
+
+        />
+
+    <SeekBar
+        android:id="@+id/sbAge"
+        android:layout_width="334dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:max="120" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text2"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:fontFamily="@font/arizonia"/>
+
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+
+        <RadioButton
+            android:id="@+id/rbtfr"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="French"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:fontFamily="@font/arizonia"/>
+        <RadioButton
+            android:id="@+id/rbteng"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="English"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:fontFamily="@font/arizonia"/>
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Your genre of movie :"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        android:textSize="30sp"
+        android:fontFamily="@font/arizonia"
+
+        />
+
+    <Button
+        android:id="@+id/btnConsulter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@color/gris"
+        android:fontFamily="@font/almendra"
+        android:gravity="center"
+        android:onClick="Calculer"
+        android:text="Consult"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/resultat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="@string/resultat"
+        android:textColor="@color/white"
+        android:textSize="35sp" />
+
+</LinearLayout>

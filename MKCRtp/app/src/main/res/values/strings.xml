@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="title">The movie of this night</string>
+    <string name="text">Your age :</string>
+    <string name="text2">Choose the language</string>
+    <string name="resultat">...</string>
+
+</resources>
+
+
